@@ -1,0 +1,24 @@
+service: aws-java-http-binary
+
+provider:
+  name: aws
+  runtime: java11
+  profile: default
+  region: us-east-1
+  timeout: 10
+  memorySize: 512
+  lambdaHashingVersion: 20201221
+
+package:
+  artifact: target/aws-java-http-binary.jar
+
+functions:
+  consoleHandler:
+    handler: br.com.cvinicius.handler.ConsoleHandler
+  httpHandler:
+    handler: br.com.cvinicius.handler.HttpHandler
+    events:
+      - http:
+          method: GET
+          path: /binary
+
