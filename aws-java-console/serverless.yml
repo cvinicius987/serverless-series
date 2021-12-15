@@ -1,0 +1,19 @@
+service: aws-java-http-binary
+
+provider:
+  name: aws
+  runtime: java11
+  profile: default
+  region: us-east-1
+  timeout: 10
+  memorySize: 256
+  lambdaHashingVersion: 20201221
+
+package:
+  artifact: target/aws-java-console.jar
+
+functions:
+  consoleHandler:
+    handler: br.com.cvinicius.ConsoleHandler
+    environment:
+      TITLE: Função Console Handler

@@ -3,10 +3,10 @@
 Conteudo sobre o uso da arquitetura Serverless utilizando os principais provedores de Cloud e tecnologias variadas.
 
 
-### Ambiente
+## Ambiente
 
 
-#### AWS
+### AWS
 
 Necessário a instalação do AWS CLI para realizar os deploys diretamente pelo console.
 
@@ -20,14 +20,14 @@ Após a instalação necessário executar o comando abaixo, para verificar o cor
 aws --version
 ```
 
-### Serverless Framework
+#### Serverless Framework
 
 
 Utilizado para realizar deploy e execução de funções remotas.
 
 [Site oficial](https://www.serverless.com/framework/docs/getting-started)
 
-#### NodeJS e NPM
+##### NodeJS e NPM
 
 Para Utilizar o Serverless frmework precisamos ter o NodeJS e NPM instalados, seguindo os seguintes procedimentos:
 
@@ -45,7 +45,7 @@ node -v
 npm -v
 ```
 
-#### Instalação
+##### Instalação
 
 
 A instalação pode ser realizada de 2 formas, sendo elas **standalone** ou via **npm**
