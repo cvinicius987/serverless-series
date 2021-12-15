@@ -2,7 +2,9 @@
 
 Conteudo sobre o uso da arquitetura Serverless utilizando os principais provedores de Cloud e tecnologias variadas.
 
+
 ### Ambiente
+
 
 #### AWS
 
@@ -19,6 +21,7 @@ aws --version
 ```
 
 ### Serverless Framework
+
 
 Utilizado para realizar deploy e execução de funções remotas.
 
